@@ -1,0 +1,88 @@
+.cards {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .card {
+        width: 100%;
+        height: 24.2rem;
+        border: 0.1rem solid lightgray;
+        border-radius: 0.4rem;
+        display: flex;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+            box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.191);
+            .phone-mensage {
+                display: block;
+            }
+        }
+    
+        .area-image {
+            width: 36rem;
+            height: 24.2rem;
+            img { 
+                max-width: 36rem;
+                width: 36rem;
+                max-height: 24.2rem;
+                height: 100%;
+                border-radius: 0.4rem 0 0 0.4rem;
+            }
+        }
+        .area-text {
+            width: 100%;
+            padding: 1.4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+    
+            p { 
+                color: $brand-gray;
+            }
+            h4 {
+                margin-top: 0.3rem;            
+            }
+    
+            ul {
+                display: flex;
+                gap: 1rem;
+                margin-top: 1.5rem;
+            }
+            .amenities{ 
+                li {
+                    background-color: rgba(128, 128, 128, 0.082);
+                    color: rgba(128, 128, 128, 0.527);
+                    padding: 0.2rem 1rem;    
+                    border-radius: 1rem;
+                    font-weight: bold;
+                }
+            }
+    
+        }
+    
+        footer { 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .phone-mensage {
+                display: none;
+                button { 
+                    color: $brand-orange;
+                    transition: .3s;
+                    border-radius: .4rem;
+                    text-transform: uppercase;
+                    font-weight: bold;
+
+                    &:hover { 
+                        background-color: $brand-orange;
+                        color: $brand-white;
+                    }
+            }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,23 @@
+button {
+    padding: 0.7rem 1rem;
+    border-radius: 1.4rem;
+    color: $brand-gray;
+}
+
+.btn-city {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    img {
+        margin-left: 0.5rem;
+        width: 1rem;
+    }
+}
+
+.btn-blue {
+    color: $primary;
+    border: 0.1rem solid $primary;
+}

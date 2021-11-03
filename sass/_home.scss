@@ -1,0 +1,132 @@
+.s-hero { 
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    .container {
+        display: flex;
+        flex-direction: row; 
+    }
+    
+    sidebar {
+        width: 41rem;
+        max-width: 100%;
+        margin-right: 2rem;
+        
+        input {
+            width: 100%;
+            padding: 1.5rem 1.3rem;
+            border-radius: 0.4rem;
+        }
+
+        .area-yellow, .area-transparent {
+            border-radius: 0.4rem;
+            padding: 1.2rem;
+            margin-bottom: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.8rem;
+            transition: background-color .3s;
+            h5 {
+                margin-bottom: 0.9rem;
+            }
+            button {
+                margin-top: 0.6rem;
+                box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.191);
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.191);
+                }
+                &:focus { 
+                    background-color: $primary;
+                    color: $brand-white
+                }
+            }
+
+            .numbers-bedrooms, .numbers-garage, .numbers-bathrooms {
+                .btns-numbers {
+                    display: flex;
+                    gap: 1rem;
+                    justify-content: space-between;
+                    button {
+                        max-width: 100%;
+                        width: 4rem;
+                    }
+                }
+            }
+
+            .min-max, .area-min-max {
+                display: flex;
+                gap: 1.5rem;
+            }
+        }
+
+        .area-yellow { 
+            background-color: $brand-yellow;
+            h5 {
+                color: rgb(162, 119, 38);
+            }
+            button {
+                background-color: $brand-white;
+            }
+            .property {
+                span {
+                    color: rgb(94, 69, 23);
+                }
+            }
+        }
+
+        .area-transparent {
+            border: 0.1rem solid $brand-gray;
+            h5 {
+                color: $brand-gray;
+            }
+            input, button {
+                border: 0.1rem solid $brand-gray;
+            }
+        }
+    }
+
+    main {
+        width: 100%;
+
+        nav {
+            color: $primary;
+            font-weight: bold;
+            border-bottom: 0.05rem solid rgba(128, 128, 128, 0.579);
+            ul {
+                display: flex;
+                li {
+                    cursor: pointer;
+                    padding: 1.5rem 2rem;
+                    transition: .3s;
+                    &:first-child {
+                        border-bottom: 0.4rem solid $primary;
+                    }
+                    &:hover {
+                        background-color: rgba(17,144,205,.08);
+                    }
+                }
+            }
+        }
+
+        .title {
+            margin-top: 3rem;
+            h3, h4 {
+                display: inline-block;
+            }
+            h3 {
+                margin-right: 0.6rem;
+            }
+            h4 {
+                color: $brand-gray;
+                font-weight: normal;
+            }
+            button {
+                margin-top: 1rem;
+                transition: .3s;
+                &:hover { 
+                    background-color: $brand-blue-hover !important;
+                }
+            }
+        }
+        
+    }
+}
