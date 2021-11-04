@@ -32,10 +32,10 @@ const createElements = (groupProperties) => {
                                         <p>${location.street}, ${location.streetNumber} - ${location.neighborhood}, ${location.city} - ${propertie.listing.address.stateAcronym}</p>
                                         <h4>${propertie.link.name}</h4>
                                         <ul class="infos">
-                                            <li>${propertie.listing.totalAreas[0]} m²</li>
+                                            <li>${propertie.listing.usableAreas[0]} m²</li>
                                             <li>${propertie.listing.bedrooms[0]} Quarto(s)</li>
-                                            <li>${propertie.listing.bathrooms [0] !== 0 ? 'Banheiro(s)': 'Não possui banheiro'} </li>
-                                            <li>${propertie.listing.parkingSpaces[0] !== 0 ? 'Vaga(s)' : 'Não possui vaga de estacionamento'} </li>
+                                            <li>${propertie.listing.bathrooms[0] !== 0 ? `${propertie.listing.bathrooms[0]} Banheiro(s)`: 'Não possui banheiro'} </li>
+                                            <li>${propertie.listing.parkingSpaces[0] !== 0 ? `${propertie.listing.parkingSpaces[0]} Vaga(s)` : 'Não possui vaga de estacionamento'} </li>
                                         </ul>
                                         <ul class="amenities">
                                             ${propertie.listing.amenities.reduce((acc, amenitie) => { 
