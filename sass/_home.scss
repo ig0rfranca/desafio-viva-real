@@ -34,10 +34,6 @@
                 &:hover {
                     background-color: rgba(0, 0, 0, 0.191);
                 }
-                &:focus { 
-                    background-color: $primary;
-                    color: $brand-white
-                }
             }
 
             .numbers-bedrooms, .numbers-garage, .numbers-bathrooms {
@@ -48,6 +44,10 @@
                     button {
                         max-width: 100%;
                         width: 4rem;
+                        &:focus { 
+                            background-color: $primary;
+                            color: $brand-white
+                        }
                     }
                 }
             }

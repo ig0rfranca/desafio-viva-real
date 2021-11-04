@@ -13,7 +13,7 @@ const createElements = (groupProperties) => {
                         ` 
                             <h3>${properties.length}<h4>Imóveis à venda em ${properties[0].link.data.city} - ${properties[0].listing.address.stateAcronym}</h4></h3>
                             <button class="btn-city btn-blue" id="btn-blue">
-                            ${properties[0].link.data.city} - ${properties[0].listing.address.stateAcronym}
+                                ${properties[0].link.data.city} - ${properties[0].listing.address.stateAcronym}
                                 <img src="/public/delete-icon.svg" alt="icon-delete">
                             </button>
                         `
