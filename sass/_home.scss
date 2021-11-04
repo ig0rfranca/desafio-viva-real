@@ -166,6 +166,16 @@
                 }
             }
         }
-        
+
+        .error { 
+            margin-top: 10rem;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            height: 100%;
+            font-size: 5rem;
+            display: none;
+        }
     }
 }

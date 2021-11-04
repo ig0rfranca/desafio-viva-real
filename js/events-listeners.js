@@ -6,6 +6,10 @@ const eventsListeners = () => {
         event.preventDefault()
         fetchProperties(inputElement.value)
     })
+    inputElement.addEventListener('keyup', function(event) { 
+        event.preventDefault()
+        fetchProperties(inputElement.value)
+    })
 
     const btn = document.querySelector(".btn-city");
     btn.addEventListener("click", function() {
