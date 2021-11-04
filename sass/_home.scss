@@ -89,6 +89,7 @@
                         cursor: pointer;
                         &::before, &::after {
                             content: "";
+                            transition: all .3s ease;
                         }
                         &::before {
                             display: inline-block;
