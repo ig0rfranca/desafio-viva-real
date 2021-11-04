@@ -70,6 +70,44 @@
                 span {
                     color: rgb(94, 69, 23);
                 }
+                .btn-on-off { 
+                    display: inline-block;
+                    .on-off-checkbox {
+                        position: absolute;
+                        left: -999rem;
+                        &:checked + .on-off-button::before {
+                            background-color: $primary;
+                        }
+                        &:checked + .on-off-button::after {
+                            left: 2.3rem;
+                        }
+                    }
+                    .on-off-button {
+                        display: inline-block;
+                        vertical-align: middle;
+                        position: relative;
+                        cursor: pointer;
+                        &::before, &::after {
+                            content: "";
+                        }
+                        &::before {
+                            display: inline-block;
+                            width: 5.2rem;
+                            height: 3.2rem;
+                            background-color: rgba(17,144,205,.1);
+                            border-radius: 5rem;
+                        }
+                        &::after { 
+                            position: absolute;
+                            top: 0.2rem;
+                            left: 0.2rem;
+                            width: 2.7rem;
+                            height: 2.7rem;
+                            border-radius: 100%;
+                            background-color: $brand-white;
+                        }
+                    }
+                }
             }
         }
 
